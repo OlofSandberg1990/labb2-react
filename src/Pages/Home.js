@@ -1,10 +1,24 @@
-import React from "react";
+import React, {useState} from "react";
 import welcomeImage from "../images/welcome.webp";
 
 function Home(){
 
+    const [bgColor, setBgColor] = useState("");
+  
+    const imgClick = () =>{
+      
+      if (bgColor === "orange") {
+        setBgColor("");
+      }
+      else{
+        setBgColor("orange");
+  
+      }
+    };
+
+
     return(
-        <section>
+        <section style ={{backgroundColor: bgColor}}>
         
         <div className="info-box">
           <h4>Välkommen</h4>
@@ -14,6 +28,7 @@ function Home(){
                 src={welcomeImage}
                 alt="En man som vinkar"
                 className="welcomeImg"
+                onClick={imgClick}
               />
              Välkommen till min digitala värld! Som student på min första resa in i webbutvecklingens fascinerande rike, är jag stolt över att presentera mitt allra första skolprojekt - en hemsida skapad med HTML och CSS. Denna sida är ett fönster till mina första steg som utvecklare, en plats där jag kan dela med mig av mina lärdomar, passioner och de projekt jag har arbetat på under min utbildning.
 

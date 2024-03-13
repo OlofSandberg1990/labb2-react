@@ -1,0 +1,153 @@
+import React from "react";
+import imgDisc from "../images/discGolf.jpg";
+import imgBruce from "../images/springsteen.webp";
+
+
+function Other(){
+
+    return(
+       <>
+       <section>
+      <div className="info-box">
+        <h4>Övrigt</h4>
+        <div className="otherText">
+          <div className="discGolf-container">
+            <img
+              src={imgDisc}
+              alt="Bild på en discgolfkorg"
+              className="discGolfPicture"
+            />
+
+            <h5>DiscGolf</h5>
+            <p>
+              Discgolf är en sport som kombinerar element från golf och frisbee,
+              och har vuxit i popularitet över hela världen sedan dess moderna
+              uppkomst under 1960-talet. Spelet går ut på att kasta en disc
+              (frisbee) från en utkastplats, eller tee, mot ett mål, vanligtvis
+              en korg med kedjor som fångar disken. Målet är att slutföra banan,
+              som kan bestå av flera hål, med så få kast som möjligt. Med sina
+              rötter i lekfulla frisbeekastningar i parker, har discgolf
+              utvecklats till en organiserad sport med professionella
+              turneringar, dedikerade banor och en global gemenskap av spelare.
+              En av de stora dragen med discgolf är dess tillgänglighet. Banor
+              finns i en mängd olika miljöer, från stadsparker till omfattande
+              skogslandskap, vilket erbjuder spelare både fysiska utmaningar och
+              natursköna upplevelser. Sporten kräver inte heller mycket
+              utrustning – en grunduppsättning av discar är allt som behövs för
+              att komma igång, vilket gör discgolf till en relativt billig
+              aktivitet jämfört med många andra sporter. Discgolfens regler
+              liknar traditionell golf. Varje hål börjar vid en utkastplats och
+              avslutas när disken landar i korgen. Antalet kast som krävs för
+              att nå målet på varje hål räknas, och spelaren med lägst totalt
+              antal kast efter alla hål vinner. Banor varierar stort i
+              svårighetsgrad, med hinder som träd, vatten och terrängvariationer
+              som utmanar spelarnas precision och strategi. Discgolf har inte
+              bara blivit en populär fritidsaktivitet utan också en
+              konkurrenskraftig sport. Professionella turneringar, såsom
+              världsmästerskapen i discgolf, lockar spelare från hela världen.
+              Dessa evenemang drivs av organisationer som Professional Disc Golf
+              Association (PDGA), som också standardiserar regler och
+              banutformning, samt främjar sportens tillväxt globalt. Utöver den
+              fysiska aspekten av spelet, är discgolf också känt för sin starka
+              gemenskapskänsla. Spelare av alla åldrar och färdighetsnivåer kan
+              delta, vilket gör det till en inkluderande aktivitet som främjar
+              samhörighet och vänskap. Många spelare uppskattar den låga
+              instegströskeln och det faktum att sporten kan anpassas för att
+              vara så avslappnad eller konkurrenskraftig som man själv önskar.
+              Miljöpåverkan av discgolf är generellt låg, särskilt jämfört med
+              många andra sporter. Banor kan anläggas med minimal störning i
+              naturliga landskap, och sporten kan spelas utan behov av
+              omfattande underhåll eller infrastruktur. Detta gör discgolf till
+              en miljövänlig sport som både kan främja och gynna bevarandet av
+              grönområden. Framtiden för discgolf ser ljus ut, med fortsatt
+              tillväxt i antalet spelare och banor världen över. Teknologiska
+              framsteg, såsom bättre discdesign och användning av appar för
+              poängräkning och banöversikter, fortsätter att förbättra
+              spelupplevelsen. Samtidigt arbetar gemenskapen aktivt för att göra
+              sporten ännu mer tillgänglig och välkomnande för nya spelare.
+              Sammanfattningsvis är discgolf mer än bara en sport; det är en
+              livsstil som firar friluftsliv, gemenskap och den enkla glädjen i
+              att kasta en disc. Oavsett om du är en erfaren spelare eller
+              nybörjare, erbjuder discgolf en unik blandning av fysisk
+              aktivitet, mental utmaning och social interaktion, vilket gör det
+              till en berikande hobby för människor från alla samhällsskikt.
+            </p>
+          </div>
+          <div className="springsteen-container">
+            <img
+              src={imgBruce}
+              alt="Bild på en discgolfkorg"
+              className="discGolfPicture"
+            />
+            <h5>Bruce Springsteen</h5>
+            <p>
+              Bruce Springsteen, även känd som "The Boss", är en av de mest
+              framstående och inflytelserika musikerna i den amerikanska
+              rockhistorien. Född den 23 september 1949 i Freehold, New Jersey,
+              började Springsteen sin musikaliska karriär i mitten av
+              1960-talet. Hans musik, känd för dess poetiska texter,
+              passionerade framträdanden och distinkta rocksound, har berört
+              hjärtan och sinnen över hela världen. Springsteens tidiga liv
+              präglades av en djup kärlek till musik. Han inspirerades av
+              artister som Elvis Presley och The Beatles, vilket ledde honom att
+              köpa sin första gitarr för bara 18 dollar. Det var i de små
+              barerna och klubbarna i New Jersey som han började forma sin
+              musikaliska identitet och så småningom blev frontfigur i bandet
+              The E Street Band, som skulle komma att bli en central del i hans
+              karriär. 1973 släpptes Springsteens debutalbum "Greetings from
+              Asbury Park, N.J.", som mottogs väl av kritiker men inte genast
+              blev en försäljningssuccé. Det var inte förrän med sitt tredje
+              album, "Born to Run" 1975, som Springsteen bröt igenom stort.
+              Albumet, med dess titelspår "Born to Run", blev en hymn för den
+              amerikanska drömmen och ungdomlig längtan efter frihet. Denna
+              framgång cementerade hans plats i rockmusikens värld och inledde
+              en karriär som skulle sträcka sig över årtionden. Springsteens
+              musik har ofta skildrat livet i småstads-Amerika, arbetsklassens
+              kamp och den amerikanska drömmens komplexitet. Hans album
+              "Darkness on the Edge of Town" (1978) och "Nebraska" (1982)
+              utforskar dessa teman med en råhet och ärlighet som resoneras
+              djupt hos lyssnarna. "Born in the U.S.A." (1984), hans mest
+              kommersiellt framgångsrika album, innehåller hits som titelspåret
+              "Born in the U.S.A.", "Dancing in the Dark" och "Glory Days".
+              Trots att albumet ofta missförstås som patriotiskt, erbjuder det
+              en kritisk blick på Amerika, med berättelser om Vietnamveteraners
+              återanpassning och arbetsklassens förluster. Springsteen är också
+              känd för sina episka liveframträdanden, ofta med konserter som
+              varar i över tre timmar. Hans förmåga att skapa en omedelbar
+              förbindelse med publiken, tillsammans med E Street Bands energi
+              och musikalitet, har gjort hans liveframträdanden legendariska.
+              Utanför musiken har Springsteen engagerat sig i sociala och
+              politiska frågor, ofta ta ställning för mänskliga rättigheter, mot
+              krig och för ekonomisk rättvisa. Hans musik har använts i
+              politiska kampanjer, mest noterbart av Barack Obama under 2008 och
+              2012 års presidentvalskampanjer. Springsteens bidrag till musik
+              har gett honom en rad utmärkelser, inklusive 20 Grammy Awards, en
+              Oscar för bästa originalsång för "Streets of Philadelphia" och
+              utnämningen till Kennedy Center Honors 2009. Han har också blivit
+              invald i Rock and Roll Hall of Fame och Songwriters Hall of Fame.
+              Trots sin framgång har Springsteen förblivit trogen sina rötter
+              och sina tidiga influenser. Hans musik fortsätter att utforska och
+              berätta historier om den mänskliga erfarenheten, med en empati och
+              ärlighet som är sällsynt. Bruce Springsteen är inte bara en
+              musiker; han är en berättare vars verk speglar den amerikanska
+              själens mångfacetterade landskap. Genom årtiondena har Springsteen
+              utvecklats som artist, men hans kärnbudskap om hopp, kärlek,
+              förlust och längtan förblir oförändrat. Hans senare verk,
+              inklusive "Wrecking Ball" (2012) och "Western Stars" (2019), visar
+              en artist som fortfarande utforskar nya territorier, både
+              musikaliskt och tematiskt, medan han behåller det som gör honom
+              unik. Bruce Springsteens arv är inte bara hans musik utan hans
+              outtröttliga strävan att förstå och uttrycka den mänskliga andan i
+              all dess komplexitet.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+       </>
+        
+        );
+}
+        
+
+export default Other
