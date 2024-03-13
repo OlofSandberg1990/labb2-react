@@ -1,9 +1,11 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import {Link} from "react-router-dom"; //Importerar Link från react-router-dom biblioteket.
 
 
 function Navbar (){
-    return(
+
+  return(
+    //En navbar som genom "Link to" specificerar sökvägen när man klickar på något av list-objekten
         <nav class="navbar">
         <ul>
           <li><Link to ="/">Start</Link></li>

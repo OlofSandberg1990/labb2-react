@@ -44,7 +44,7 @@ export default function GitHubDemo() {
         <h1>Mina GitHub-projekt</h1>
         <div className='projects'>
 
-            {posts.map(post => (
+            {posts.map(post => (   //Här packas mina gitHub-projekt upp och skapas som länkar med namnet på projekten och desprictions under.
                 <div className='projectDiv' key={post.id}>
                 <a href={post.html_url} target="_blank" rel="noopener noreferrer"><h3>- {post.name} -</h3></a>
                 <p>{post.description}</p>

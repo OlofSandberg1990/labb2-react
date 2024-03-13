@@ -1,5 +1,5 @@
 import React from "react";
-import cvData from "../json/cvData.json";
+import cvData from "../json/cvData.json"; //Importerar json-filen
 import imgSkills from "../images/skills.webp";
 import imgExp from "../images/experience.webp";
 import imgEdu from "../images/education.webp";
@@ -37,7 +37,11 @@ function CV(){
           <h4 id="header-education">Utbildning</h4>
           <hr />
           <div id="education">
-            {cvData.education.map((edu, index) => //Här "packas" education-arrayen från min jsonfil upp och skapar unika keys
+            
+            {cvData.education.map((edu, index) => 
+            //Här packas education-arrayen upp från min json-fil med hjälp av .map(). 
+            
+            //För varje element skapas ett nytt div-element med en unik key(index)
             <div key={index}>
                 <p>{edu.school} - {edu.program} - {edu.years}</p>
                 </div>
@@ -58,6 +62,7 @@ function CV(){
           <hr />
           <div id="workExperience">
             {cvData.workExperience.map((exp, index) => 
+            //Samma som ovan, fast här hämtar vi workExperience istället
             <div key = {index}>
                 <p>{exp.company} - {exp.position} - {exp.years} </p>
             </div>

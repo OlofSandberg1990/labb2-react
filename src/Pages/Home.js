@@ -1,34 +1,15 @@
-import React, { useEffect, useState } from "react";
-import welcomeImage from "../images/welcome.webp"; // Se till att denna sökväg stämmer överens med din bildsökväg
-import Modal from "../components/Modal";
+import React, { useState } from "react";
+import welcomeImage from "../images/welcome.webp"; 
+
 
 function Home() {
-  const [showModal, setShowModal] = useState(false);
-  const [typedSequence, setTypedSequence] = useState("");
+
+  //Skapar en ny variabel för att ändra min bakgrundsfärg
   const [bgColor, setBgColor] = useState("");
 
-  useEffect(() => {
-    const keyDownHandler = (event) => {
-      // Uppdaterar typedSequence med den senaste sekvensen av tecken
-      setTypedSequence((prev) => (prev + event.key).slice(-4)); // Behåll de senaste 4 tecknen
-    };
-
-    // Lägg till eventlyssnare för hela dokumentet
-    document.addEventListener("keydown", keyDownHandler);
-
-    // Ta bort eventlyssnare när komponenten avmonteras
-    return () => {
-      document.removeEventListener("keydown", keyDownHandler);
-    };
-  }, []);
-
-  useEffect(() => {
-    if (typedSequence === "1337") {
-      setShowModal(true);
-      setTypedSequence(""); // Nollställer sekvensen efter att modalen har visats
-    }
-  }, [typedSequence]);
-
+ 
+//Skapar en funktion som ändrar bakgrundsfärgen till orange.
+//Om färgen redan är orange ska den sättas till tom, annars till orange
   const imgClick = () => {
     setBgColor(bgColor === "orange" ? "" : "orange");
   };
@@ -38,10 +19,9 @@ function Home() {
       <div className="info-box">
         <h4>Välkommen</h4>
         <div className="indexText">
+                  
+           
           
-          {showModal && (
-            <Modal showModal={showModal} setShowModal={setShowModal} />
-          )}
           <img
             src={welcomeImage}
             alt="Välkommen"
