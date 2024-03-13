@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/labb2-react/static/css/main.83a87824.css",
-    "main.js": "/labb2-react/static/js/main.3de3e543.js",
+    "main.js": "/labb2-react/static/js/main.95b9ec8e.js",
     "static/media/contact.webp": "/labb2-react/static/media/contact.f134fd9ca627fc480cb4.webp",
     "static/media/skills.webp": "/labb2-react/static/media/skills.57f1f6d95e5be3702e12.webp",
     "static/media/education.webp": "/labb2-react/static/media/education.1e22ba4d9c82b7fc5993.webp",
@@ -13,10 +13,10 @@
     "static/media/profilePic.jpg": "/labb2-react/static/media/profilePic.f9f9f2a781f4f1b5f7fc.jpg",
     "index.html": "/labb2-react/index.html",
     "main.83a87824.css.map": "/labb2-react/static/css/main.83a87824.css.map",
-    "main.3de3e543.js.map": "/labb2-react/static/js/main.3de3e543.js.map"
+    "main.95b9ec8e.js.map": "/labb2-react/static/js/main.95b9ec8e.js.map"
   },
   "entrypoints": [
     "static/css/main.83a87824.css",
-    "static/js/main.3de3e543.js"
+    "static/js/main.95b9ec8e.js"
   ]
 }
