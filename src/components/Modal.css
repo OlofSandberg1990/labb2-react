@@ -1,0 +1,34 @@
+.modalPopUp {
+width: 300px;
+height: 300px;
+  align-items: center;
+  text-align: center;
+  z-index: 1; /* Se till att modulen är över overlayen */
+  position: fixed;
+  margin: auto;
+  left: 0;
+  right: 0;
+  background-color: rgb(139, 40, 231);
+  border-radius: 30%;
+  padding: 3rem 3rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  border: 3px solid rgb(255, 207, 118);;
+}
+.modalPopUp .easterImg{
+    width: 80%;
+    height: auto;
+    
+    
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Halvgenomskinlig svart */
+    backdrop-filter: blur(5px); /* Lägg till suddighetseffekt */
+    z-index: -1; /* Se till att den är under modalen om modalen har högre z-index */
+  }
+  
+  
