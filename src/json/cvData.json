@@ -1,0 +1,34 @@
+{
+    "education": [
+      {
+        "school": "Peder Skrivare Gymnasieskola",
+        "program": "Tekniskt program",
+        "years": "2007 - 2009"
+      },
+      {
+        "school": "Campus Varberg",
+        "program": "Systemutvecklare",
+        "years": "2023 - Pågående"
+      }
+    ],
+    "workExperience": [
+      {
+        "company": "Gekås Ullared",
+        "position": "Butiksbiträde",
+        "years": "2009 - 2013"
+      },
+      {
+        "company": "Gekås Ullared",
+        "position": "Sortimentsansvarig",
+        "years": "2013 - 2020"
+      },
+      {
+        "company": "Gekås Ullared",
+        "position": "Arbetsledare",
+        "years": "2020 - Pågående"
+      }
+    ]
+  }
+
+
+  
