@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <!--H-->
+  <head>
+    <meta charset="UTF-8" />
+    <title>Min CV-sida</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Riot&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--Sidhuvud med logga och rubriker-->
+    <header>
+      <div class="header-logo-container">
+        <img src="Images/pcLogo3.png" alt="bild på en dator" class="headerLogo">
+      </div>
+      <div class="header-text-container">
+        <h1>Min CV:sida</h1>
+        <h2>- Olof Sandberg -</h2>
+        <h3>Systemutvecklare</h3>
+      </div>
+    </header>
+    <!--En navbar för att kunna navigera mellan de olika html-sidorna-->
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html" id="start">Start</a></li>
+        <li><a href="about.html" id="about">Om mig</a></li>
+        <li><a href="cv.html" id="cv">CV</a></li>
+        <li><a href="portfolio.html" id="portfolio" class="active">Portfolio</a></li>
+        <li><a href="other.html" id="other">Övrigt</a></li>
+      </ul>
+    </nav>
+    <section>
+      <!--En class för info-box där all information i bodyn visas-->
+      <div class="info-box"><br>
+        <h2>Portfolio</h2>        
+        <!--En UL för att hålla reda på de olika projekten-->
+        <ul class="portfolio-ul">
+          <li>           
+            <!--Varje projekt består av en <li> där det först kommer rubrik, sedan en bild på projektet
+              följt av en knapp-->
+            <h4>Numbers Game</h4><br />
+            <img src="Images/numbersGame.webp" alt="En projektbild med olika nummer" class="projectImage" /><br />
+            <a href=#modal1>
+              <button class = portfolioBtn>Mer information</button>
+            </a><!--När man klickar på knappen öppnas en modal där mer information visas -->
+          </li>
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+              <!--innehållet i modal1-->
+              <a href="#" class="close-button">&#10006;</a>
+              <h2>Numbers game</h2>
+              <p>
+                    Detta consoleapp-program, skrivet i Visual Studio Code, är ett enkelt nummergissningsspel där användaren ska försöka gissa vilket nummer datorn "tänker" på. Programmet startar med att datorn slumpmässigt väljer ett nummer inom ett fördefinierat intervall, till exempel mellan 1 och 100. Användaren informeras om att de har 5 försök på sig att gissa rätt nummer.
+                    
+                    Vid varje gissning ger programmet feedback till användaren om gissningen var för hög, för låg, eller korrekt. Om användaren gissar rätt nummer inom de tillåtna försöken, gratulerar programmet användaren och avslutar spelet. Om användaren inte lyckas gissa rätt nummer inom de 5 försöken, meddelar programmet vad det korrekta numret var och avslutar sedan spelet.
+                    
+                    Programmet hanterar även felaktiga inmatningar från användaren, till exempel om de matar in icke-numeriska värden eller nummer utanför det tillåtna intervallet, och instruerar användaren att mata in ett giltigt nummer.
+                    
+                    
+                    Detta spel är en utmärkt övning för nybörjare i programmering för att lära sig grundläggande koncept som loopar, villkorssatser, användarinteraktion från konsolen och slumpmässig nummergenerering.</p>
+                  <!--Stänger modallen igen.-->
+                    <a href="https://github.com/OlofSandberg1990/NumberGame" target="_blank">Länk till GitHub</a>
+              </div>
+          </div>
+            <li>
+
+              <h4>ATM machine</h4><br />
+              <img src="Images/atmMachine.webp" alt="Projektbild på en bankomat" class="projectImage" /><br />
+              <a href=#modal2>
+                <button class = portfolioBtn>Mer information</button>
+              </a>
+            </li>
+            <div id="modal2" class="modal">
+              <div class="modal-content">
+                  <a href="#" class="close-button">&#10006;</a>
+                  <h2>AtM machine</h2>
+                  <p>
+                    Programmet Bankomat2.0 är ett konsolbaserat bankapplikationsprogram som simulerar grundläggande banktjänster. Användare kan logga in i systemet genom att ange sitt användarnamn och en 4-siffrig pinkod. Efter inloggning visas en meny med olika alternativ, inklusive att visa konton och saldo, överföring mellan konton, insättning, uttag, och möjlighet att logga ut.
+                    
+                    Varje användare har en lista över bankkonton (AnvändarkontonList), där varje konto (Konton) har ett unikt namn och ett saldo. Programmet tillåter användare att utföra transaktioner såsom att sätta in och ta ut pengar, samt överföra pengar mellan sina egna konton. Användaruppgifter och kontoinformation lagras i ett dictionary (kundregisterDictionary) för snabb åtkomst och hantering.
+                    
+                    Felhantering är implementerad för att säkerställa korrekt inmatning av data, till exempel att pinkoden är 4 siffror och att insatta eller uttagna belopp är giltiga decimaltal. Om användaren misslyckas med att ange rätt pinkod tre gånger i rad avslutas programmet som en säkerhetsåtgärd.
+                    
+                    Det övergripande syftet med Bankomat2.0 är att ge en enkel, men funktionell, simulering av vanliga bankoperationer i en konsolmiljö, med användarvänliga meddelanden och instruktioner för att guida användaren genom olika banktjänster.</p>
+                  
+                  <a href="https://github.com/OlofSandberg1990/Bankomat2.0.git" target="_blank">Länk till GitHub</a>
+              </div>
+          </div>
+          </li>
+          <li>
+
+            <h4>Database project</h4><br />
+            <img src="Images/databaseProject.webp" alt="En projektbild på ett rum med servrar" class="projectImage" /><br />
+            <a href=#modal3>
+              <button class = portfolioBtn>Mer information</button>
+            </a>
+          </li>
+          <div id="modal3" class="modal">
+            <div class="modal-content">
+              <a href="#" class="close-button">&#10006;</a>
+                <h2>Database project</h2>
+              <p>
+                Det här projektet utvecklat i Visual Studio, använder Entity Framework för att hantera data med en Code First-ansats, snarare än Database First, och SQL Server Management Studio (SSMS) för direkt databashantering. Programmet inkluderar en konsolbaserad meny som möjliggör åtkomst till och hantering av olika datatyper som skolan efterfrågar. Skoladministratörer kan hantera personaldata, inklusive namn, befattningar och anställningstid, samt lägga till ny personal. Elevers information, såsom vilken klass de tillhör och deras betyg i kurser, lagras också, tillsammans med information om lärare som tilldelat betygen och datumen för dessa betyg. Projektet möjliggör även frågor om antalet lärare per avdelning, elevinformation, och aktiva kurser via Entity Framework. Vidare tillåter det detaljerad ekonomisk analys genom SQL-frågor, inklusive total löneutbetalning per avdelning och genomsnittslöner. Dessutom inkluderar systemet funktionalitet för att skapa Stored Procedures för att hämta specifik elevinformation med hjälp av ID och genomföra betygsättningar med transaktioner för att hantera fel säkert.</p>              
+                <a href="https://github.com/OlofSandberg1990/Projekt_databaser.git" target="_blank">Länk till GitHub</a>
+            </div>
+        </div>
+        </a>
+          <li>
+
+            <h4>Bank</h4><br />
+            <img src="Images/bankProject.webp" alt="En projektbild över en virtuell bank" class="projectImage" /><br />
+            <a href=#modal4>
+              <button class = portfolioBtn>Mer information</button>
+            </a>
+          </li>
+          <div id="modal4" class="modal">
+            <div class="modal-content">
+              <a href="#" class="close-button">&#10006;</a>
+                <h2>Bank</h2>
+                <p>
+                  Code-crusader Bank är ett gruppprojekt utvecklat i C# med .NET, som simulerar ett enkelt banksystem. Programmet består av sjutton olika klasser som hanterar olika aspekter av bankverksamheten, inklusive kontohantering, lån, valutakurser och användaradministration. Användare kan logga in antingen som administratör eller som vanlig användare, där varje roll har tillgång till specifika funktioner. Administratören kan skapa nya användare och ställa in valutakurser, medan användare kan öppna sparkonton och lönekonto, genomföra överföringar mellan konton, begära lån baserat på deras saldo, och granska sin överföringshistorik. Det finns även en funktion för att överföra pengar till andra användare och skapa överföringsloggar för att spåra transaktionshistorik. Programmet inleds med en inloggningsskärm som ger användarna tre försök att logga in, med risken att applikationen stängs vid upprepade misslyckanden. Detta projekt erbjuder en omfattande simulering av bankverksamhet med fokus på användarinteraktion och administrativa funktioner.</p>
+                <a href="https://github.com/Tederollz/OOP---Projekt-i-grupp---Code-Crusades-SUT23-.git" target="_blank">Länk till GitHub</a>
+            </div>
+        </div>
+          </li>        
+          
+
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy;All rights reserved</p>
+    </footer>
+  </body>
+</html>

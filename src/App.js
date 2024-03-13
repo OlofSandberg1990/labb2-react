@@ -1,11 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+
 
 function App() {
   return (
-    <div className="App">
-      <h1>Välkommen till appen 2.0!!!</h1>
-      </div>
+    <>    
+    <Header></Header>
+    <Navbar></Navbar>
+    </>
   );
 }
 

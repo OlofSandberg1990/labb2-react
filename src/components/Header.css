@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  header {
+    display: flex; /*Sätter elementtypen till flexbox */
+    align-items: center; /*Centrerar elemeten i containern*/
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(51, 154, 240, 255);
+    color: white;
+    border-radius: 20px; /*Rundar kanterna*/
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /*Lägger till skugga*/
+    margin-bottom: 20px; /*Lägger till marginall under headern*/
+    width: 100%; /*Gör att headern tar upp 100% av fönstret oavsett storlek*/
+    font-size: 1.5em; /*Gör fonten 50% större*/
+  }
+  header h1 {
+    padding-top: 20px; /*Lägger till padding ovanför h1*/
+    font-size: 0.9em; /*Ändrar h1 font-size med 10%*/
+  }
+  header h2 {
+    margin: -20px;
+    font-size: 2em;
+  }
+  header h3 {
+    padding-bottom: 20px;
+    font-size: 0.9em;
+  }
+  h5 {
+    font-size: 1.2em;
+  }
+  
+  .header-logo-container {
+    margin-right: 20px;
+  }
+  .header-text-container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: -30px;
+  }
+  .headerLogo {
+    height: 120px;
+    width: auto;
+  }

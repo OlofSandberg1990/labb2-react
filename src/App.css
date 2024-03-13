@@ -1,38 +1,397 @@
-.App {
+* {
+  box-sizing: border-box;
+  transition: all 0.2s linear;
+}
+
+header {
+  display: flex; /*Sätter elementtypen till flexbox */
+  align-items: center; /*Centrerar elemeten i containern*/
+  justify-content: center;
   text-align: center;
+  background-color: rgba(51, 154, 240, 255);
+  color: white;
+  border-radius: 20px; /*Rundar kanterna*/
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /*Lägger till skugga*/
+  margin-bottom: 20px; /*Lägger till marginall under headern*/
+  width: 100%; /*Gör att headern tar upp 100% av fönstret oavsett storlek*/
+  font-size: 1.5em; /*Gör fonten 50% större*/
+}
+header h1 {
+  padding-top: 20px; /*Lägger till padding ovanför h1*/
+  font-size: 0.9em; /*Ändrar h1 font-size med 10%*/
+}
+header h2 {
+  margin: -20px;
+  font-size: 2em;
+}
+header h3 {
+  padding-bottom: 20px;
+  font-size: 0.9em;
+}
+h5 {
+  font-size: 1.2em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-logo-container {
+  margin-right: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.header-text-container {
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  margin: -30px;
+}
+.headerLogo {
+  height: 120px;
+  width: auto;
+}
+
+body {
+  margin: 0px;
+  font-family: "Protest Riot", Verdana, sans-serif;
+  background-color: rgba(245, 245, 245);
+}
+section {
+  background-color: white;
+  max-width: 1000px;
+  margin: 20px auto 100px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.content-flex {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  max-width: 800px; /*Sätter en  maxbredd på navbaren*/
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+  list-style-type: none; /*Tar bort symboloer framför varje item i listan*/
+  background-color: rgb(255, 207, 118);
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden; /*Gömmer allt på ett element som inte får plats i containern*/
+  border-radius: 20px;
+  width: 100%;
+  justify-content: space-around; /*Säkerställer att det finns lika mycket utrymme
+  runt varje element*/
+  display: flex;
+}
+.navbar a {
   color: white;
+  text-decoration: none; /*Tar bort understrykning för mina länkar*/
+  padding: 20px;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+.navbar a:hover {
+  color: rgba(
+    88,
+    149,
+    208,
+    255
+  ); /*Ändrar färgen när jag hovrar över med musen*/
+}
+.navbar a.active {
+  /*Ändrar egenskaper när en länk är "aktiv"*/
+  color: rgba(88, 149, 208, 255);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+.navbar li {
+  float: left;
+}
+footer {
+  text-align: center;
+  background-color: rgba(51, 154, 240, 255);
+  color: white;
+  border-radius: 20px;
+  box-shadow: 1px 1px lightgrey;
+  position: fixed; /*Säkerställer att footern alltid är i fixerad vid botten av skärmen*/
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.projectImage {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  border-radius: 100px;
+  border: 2px solid black;
+}
+.info-box {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap; /*Tillåter elementen att byta rad om de inte får plats*/
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  gap: 10px;
+  
+  
+  
+}
+.info-box h4 {
+  margin-bottom: 0px;
+  font-size: 1.6em;
+  font-weight: 300;
 }
 
-.App-link {
-  color: #61dafb;
+.portfolio-ul {
+  display: 100%;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "Protest Riot", Verdana, sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.portfolioBtn {
+  font-family: "Protest Riot", Verdana, sans-serif;
+  font-size: 1.2em;
+  border-radius: 20%;
+  background-color: rgb(255, 207, 118);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  border: 3px solid black;
+  padding: 10%;
+}
+.portfolioBtn:hover {
+  background-color: rgba(88, 149, 208, 255);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.portfolio-ul a {
+  margin: 20px; /* Lägg till önskat utrymme här */
+  display: inline-block; /* För att säkerställa att margin-bottom tillämpas */
+}
+.portfolio-ul li {
+  background-color: rgba(245, 245, 245);
+  text-align: center;
+  flex: 0 0 auto;
+  width: 220px;
+  margin: 10px;
+  border-radius: 25px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.portfolio-ul li:hover {
+  background-color: rgb(255, 248, 248);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.portfolio-ul a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.cv-content {
+  align-content: center;
+}
+
+.textContent {
+  flex: 3;
+}
+.profilePic {
+  float: left; /*Placerar elementet till vänster*/
+  border-radius: 50%;
+  width: 200px;
+  height: auto;
+  margin: 2em;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.contact-information-ul {
+  list-style-type: none;
+  margin-bottom: 50px;
+}
+.cv-pictures {
+  width: 200px;
+  height: auto;
+  border-radius: 30px;
+}
+.category {
+  display: flex;
+  align-items: center; /* Centrerar elementen vertikalt */
+  justify-content: center;
+  gap: 20px; /* Skapar utrymme mellan bilden och texten */
+  margin-bottom: 40px; /* Skapar utrymme mellan kategorierna */
+}
+
+.categoryImage {
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%; /* Gör bilderna cirkulära */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.table-education,
+td {
+  align-content: center;
+
+  padding: 10px;
+  text-align: left;
+}
+
+.cv-content table {
+  margin: 50px auto 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skills ul {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.skills li {
+  background-color: #333;
+  color: aliceblue;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 0 10px 10px 0;
+}
+.modal {
+  display: none; /* Gömmer modalen som standardvärde */
+  position: fixed; /* Fixerar rutan till samma plats på skärmen*/
+  z-index: 1; /* Visar modulen över andra element*/
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal:target {
+  /* Modal visas när dess id matchar target*/
+  display: block;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /*Centrerar modalen på skärmen*/
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /*Modalens bredd */
+  max-width: 600px; /*Säkerställa så det fungerar bra även på mobila enheter */
+  border-radius: 10%;
+  box-shadow: 2px 2px 4px black(0, 0, 0, 0.2);
+}
+.modalPopUp{
+  z-index: 1; /* Visar modulen över andra element*/
+  position: fixed; /* Fixerar rutan till samma plats på skärmen*/
+  margin: 15% auto; /*Centrerar modalen på skärmen*/
+}
+.close-button {
+  float: right; /* Positionera knappen till höger */
+  font-size: 28px; /* Storleken på stängsymbolen */
+  font-weight: bold;
+}
+
+.education-experience,
+.contact-information {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.education-experience h3,
+.skills h2 {
+  margin-top: 20px;
+}
+
+.indexText {
+  column-count: 2; /*Delar in texten i två kolumner*/
+  margin: 10px;
+  text-align: justify;
+  column-gap: 20px; /*Skapar utrymme mellan kolumnerna*/
+}
+.indexText p {
+  flex-wrap: wrap;
+  margin: 10px;
+  text-align: justify;
+}
+.welcomeImg {
+  width: 150px;
+  float: left;
+  border-radius: 25px;
+  margin: 0 20px 20px 0;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.otherText {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.discGolf-container,
+.springsteen-container {
+  flex: 1; /*Tillåter containrarna att flexa lika mycket*/
+  padding: 20px;
+}
+.discGolfPicture {
+  width: 60%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  border: 0.3em rgba(88, 73, 255, 0.51) solid;
+}
+
+/*Anpassa till mobilenhet*/
+@media screen and (max-width: 600px) {
+  header {
+    margin: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  .header-text-container {
+    font-size: 0.5em; /*Mindrar fontsizen med 50%*/
+  }
+  .header-text-container h1,
+  h3 {
+    margin: 15px;
+  }
+  .header-logo-container {
+    position: absolute; /*Placerar loggan längt till vänster*/
+    left: 5%;
+    top: 10px;
+  }
+  .headerLogo {
+    width: 50px;
+    height: auto;
+  }
+
+  .navbar {
+    padding: 5px 0px; /* Minskar vertikal padding för att göra navbaren tunnare */
+    flex-direction: row; /* Behåller en horisontell layout men med mindre utrymme */
+    justify-content: center; /* Centrerar navbar-element om layouten justeras */
+    margin: 10px;
+    padding: 0;
+  }
+
+  .navbar a {
+    padding: 5px 10px; /* Minskar padding inom varje länk för att göra dem tunnare */
+    font-size: 0.8em; /* Minskar fontstorleken för länkarna */
+  }
+
+  footer {
+    padding: 0px 0px; /* Minskar padding för att göra footern tunnare */
+    margin: 0px 0px;
+    font-size: 0.7em; /* Minskar fontstorleken för texten i footern */
+  }
+  .indexText {
+    column-count: 1; /*Ändrar columncount till 1 istället för 2*/
+  }
+
+  .otherText {
+    display: block;
   }
 }

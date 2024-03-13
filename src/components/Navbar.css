@@ -1,0 +1,49 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    max-width: 800px; /*Sätter en  maxbredd på navbaren*/
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar ul {
+    list-style-type: none; /*Tar bort symboloer framför varje item i listan*/
+    background-color: rgb(255, 207, 118);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden; /*Gömmer allt på ett element som inte får plats i containern*/
+    border-radius: 20px;
+    width: 100%;
+    justify-content: space-around; /*Säkerställer att det finns lika mycket utrymme
+    runt varje element*/
+    display: flex;
+  }
+  .navbar a {
+    color: white;
+    text-decoration: none; /*Tar bort understrykning för mina länkar*/
+    padding: 20px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+  }
+  .navbar a:hover {
+    color: rgba(
+      88,
+      149,
+      208,
+      255
+    ); /*Ändrar färgen när jag hovrar över med musen*/
+  }
+  .navbar a.active {
+    /*Ändrar egenskaper när en länk är "aktiv"*/
+    color: rgba(88, 149, 208, 255);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+  .navbar li {
+    float: left;
+  }
