@@ -1,5 +1,5 @@
 import React from "react";
-import "../components/Header.css";
+
 import pcImage from "../images/pcLogo3.png";
 
 function Header (){
