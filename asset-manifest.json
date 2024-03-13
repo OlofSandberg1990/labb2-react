@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/labb2-react/static/css/main.d54ebdeb.css",
-    "main.js": "/labb2-react/static/js/main.6479d1a7.js",
+    "main.css": "/labb2-react/static/css/main.5e93c639.css",
+    "main.js": "/labb2-react/static/js/main.6af06de4.js",
+    "static/media/welcome.webp": "/labb2-react/static/media/welcome.d3c0716321268ab9ab84.webp",
     "static/media/pcLogo3.png": "/labb2-react/static/media/pcLogo3.e3896a9cee6350ac4a9c.png",
     "index.html": "/labb2-react/index.html",
-    "main.d54ebdeb.css.map": "/labb2-react/static/css/main.d54ebdeb.css.map",
-    "main.6479d1a7.js.map": "/labb2-react/static/js/main.6479d1a7.js.map"
+    "main.5e93c639.css.map": "/labb2-react/static/css/main.5e93c639.css.map",
+    "main.6af06de4.js.map": "/labb2-react/static/js/main.6af06de4.js.map"
   },
   "entrypoints": [
-    "static/css/main.d54ebdeb.css",
-    "static/js/main.6479d1a7.js"
+    "static/css/main.5e93c639.css",
+    "static/js/main.6af06de4.js"
   ]
 }
